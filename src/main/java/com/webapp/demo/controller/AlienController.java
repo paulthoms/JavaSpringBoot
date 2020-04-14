@@ -23,11 +23,11 @@ public class AlienController {
 	@Autowired
 	AlienRepo repo;
 
-	@RequestMapping("/")
-	public String home() {
-		return "home";
-	}
-	
+//	@RequestMapping("/")
+//	public String home() {
+//		return "home";
+//	}
+//	
 	@PostMapping("/alien")
 	public Alien addAlien(Alien alien) {
 		repo.save(alien);
